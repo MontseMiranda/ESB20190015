@@ -53,7 +53,7 @@ _**Barcelona**_ {data-width=850}
 
 ```{r budget_table}
 
-budget <- read_excel("rooming.xlsx", sheet = "bud", range = "B13:G40") 
+budget <- read_excel("rooming.xlsx", sheet = "bud", range = "B13:G56") 
 budget <- sapply(budget, as.character)
 budget[is.na(budget)] <- ""
 budget <- data.frame(budget, stringsAsFactors = FALSE)
